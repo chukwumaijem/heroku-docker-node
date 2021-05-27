@@ -7,4 +7,7 @@ WORKDIR /home/node/application
 RUN rm -rf node_modules
 RUN yarn install
 
+RUN adduser -D user_1
+USER user_1
+
 CMD yarn run start
