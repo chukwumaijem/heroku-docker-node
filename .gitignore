@@ -1,0 +1,7 @@
+## Editor Settings
+**/.idea
+.vscode
+
+## Weird files
+**/*DS_store
+node_modules

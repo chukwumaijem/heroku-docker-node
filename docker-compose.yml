@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  project:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: project
+    container_name: project
+    volumes:
+      - '/home/node/application/node_modules'
+      - './application:/home/node/application'
+      - './application/.env:/home/node/application/.env'
+    env_file:
+      - ./application/.env
+    ports:
+      - 3000:3000

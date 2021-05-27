@@ -1,0 +1,5 @@
+application/node_modules
+application/npm-debug.log
+application/package-lock.json 
+application/dist
+application/.env.local
